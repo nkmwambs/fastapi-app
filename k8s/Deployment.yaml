@@ -21,7 +21,7 @@ spec:
         app: myapp
     spec:
       containers:
-      - image: nkarisa/fastapi-app:1.2
+      - image: nkarisa/fastapi-app:1.3
         name: fastapi-app
         resources: 
           requests:

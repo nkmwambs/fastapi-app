@@ -16,3 +16,7 @@ async def root():
 @app.post("/user")
 async def get_users(user: UserIn,q: int):
     return {'name': user.name, 'q': q}
+
+@app.get("/user/{user_id}")
+async def get_users(user_id: int):
+    return {'message': f'Selected user id {user_id}'}
